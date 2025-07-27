@@ -52,3 +52,75 @@ CodeCoverage/
 *.VisualState.xml
 TestResult.xml
 nunit-*.xml
+
+## Build results
+bin/
+obj/
+[Ll]og/
+TestResults/
+*.exe
+*.dll
+*.app
+*.log
+
+## User-specific files
+*.user
+*.userosscache
+*.suo
+*.sln.docstates
+
+## Visual Studio
+.vscode/
+.vs/
+*.csproj.user
+
+## Rider
+.idea/
+*.sln.iml
+
+## ASP.NET Secrets
+secrets.json
+
+## dotCover
+*.dotCover
+
+## Others
+*.nupkg
+*.snupkg
+*.pdb
+
+## NuGet
+*.nupkg
+packages/
+.nuget/
+
+## Entity Framework
+Migrations/
+
+## Configuration files
+appsettings.Development.json
+appsettings.Local.json
+
+## Publish
+publish/
+*.pubxml
+*.publish.xml
+
+## Resharper
+_ReSharper*/
+*.DotSettings.user
+
+## Local DBs
+*.mdf
+*.ldf
+
+## Temporary files
+*.tmp
+*.bak
+
+## Logs
+*.log
+
+# JetBrains Rider
+.idea/
+*.sln.iml
