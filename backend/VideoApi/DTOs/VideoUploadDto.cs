@@ -15,7 +15,6 @@ public class VideoUploadDto
 
     [MaxLength(160)]
     public string? Description { get; set; }
-;
     /// <summary>
     /// Categories provided by the client.  Duplicate names are ignored and new
     /// categories will be created server‑side.
@@ -27,5 +26,4 @@ public class VideoUploadDto
     /// </summary>
     [Required]
     public IFormFile? File { get; set; }
-;
 }
