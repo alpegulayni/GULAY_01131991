@@ -1,0 +1,25 @@
+<div class="row justify-content-center">
+  <div class="col-md-8">
+    <h2>Upload a Video</h2>
+    <form [formGroup]="uploadForm" (ngSubmit)="onSubmit()" novalidate>
+      <div class="mb-3">
+        <label for="title" class="form-label">Title</label>
+        <input id="title" type="text" class="form-control" formControlName="title" required>
+      </div>
+      <div class="mb-3">
+        <label for="description" class="form-label">Description (optional)</label>
+        <textarea id="description" class="form-control" formControlName="description" maxlength="160"></textarea>
+      </div>
+      <div class="mb-3">
+        <label for="categories" class="form-label">Categories (comma separated)</label>
+        <input id="categories" type="text" class="form-control" formControlName="categories" placeholder="e.g. Travel, Food">
+      </div>
+      <div class="mb-3">
+        <label for="file" class="form-label">Video File</label>
+        <input id="file" type="file" accept=".mp4,.avi,.mov" class="form-control" (change)="onFileChange($event)">
+      </div>
+      <div *ngIf="uploadError" class="alert alert-danger">{{ uploadError }}</div>
+      <button type="submit" class="btn btn-primary" [disabled]="uploadForm.invalid || uploadError">Upload</button>
+    </form>
+  </div>
+</div>
