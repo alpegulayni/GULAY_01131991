@@ -94,9 +94,6 @@ secrets.json
 packages/
 .nuget/
 
-## Entity Framework
-Migrations/
-
 ## Configuration files
 appsettings.Development.json
 appsettings.Local.json
