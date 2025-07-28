@@ -121,3 +121,50 @@ _ReSharper*/
 # JetBrains Rider
 .idea/
 *.sln.iml
+
+# Angular build artifacts
+/dist/
+/out-tsc/
+
+# Angular environment files (if you have environment secrets)
+/src/environments/environment*.ts
+
+# IDEs and editors
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Node dependencies
+/node_modules/
+
+# Compiled output
+*.js
+*.js.map
+*.tsbuildinfo
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.swp
+*.bak
+
+# Testing
+/coverage/
+karma-*.log
+test-results/
+
+# Angular cache
+.angular/cache/
+.angular
+
+# Misc
+package-lock.json
