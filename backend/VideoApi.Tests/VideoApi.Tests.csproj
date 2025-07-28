@@ -16,6 +16,8 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <!-- Moq is used to create lightweight test doubles -->
+    <PackageReference Include="Moq" Version="4.18.4" />
   </ItemGroup>
 
   <!-- Ensure the latest C# language version is used -->
